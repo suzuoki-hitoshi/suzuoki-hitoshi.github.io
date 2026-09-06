@@ -504,7 +504,6 @@
           <h2 class="title">{{ block.title }}</h2>
           {% endif %}
 
-          {% if block.type == 'flexible' %}
             {% for media in block.media %}
               {% if media.type == 'image' and media.image %}
               <div class="image-card">
@@ -532,24 +531,26 @@
               {% endfor %}
             </div>
             {% endif %}
-
-          {% elsif block.type == 'biography' %}
-            <div class="biography">
-              <div class="bio-intro">
-                {{ block.introduction }}
-                <span class="bio-name">{{ block.name }}</span>
-              </div>
-              <div class="bio-history">
-                {% for history in block.history %}
-                <div class="bio-year">{{ history.year }}</div>
-                <div class="bio-event">{{ history.event }}</div>
-                {% endfor %}
-              </div>
-            </div>
-          {% endif %}
         </section>
         {% endif %}
       {% endfor %}
+
+      <div class="divider"></div>
+      <section class="section">
+        <h2 class="title">{{ site_data.biography.title }}</h2>
+        <div class="biography">
+          <div class="bio-intro">
+            {{ site_data.biography.introduction }}
+            <span class="bio-name">{{ site_data.biography.name }}</span>
+          </div>
+          <div class="bio-history">
+            {% for history in site_data.biography.history %}
+            <div class="bio-year">{{ history.year }}</div>
+            <div class="bio-event">{{ history.event }}</div>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
 
       <div class="divider"></div>
       <div class="bottom-nav">

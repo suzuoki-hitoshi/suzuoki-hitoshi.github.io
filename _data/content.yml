@@ -23,8 +23,7 @@ social_links:
     enabled: true
 
 sections:
-  - type: flexible
-    enabled: true
+  - enabled: true
     title: YouTube LIVE STREAM
     media:
       - type: image
@@ -40,8 +39,7 @@ sections:
       - label: YouTube
         url: https://www.youtube.com/@rtmfilm
 
-  - type: flexible
-    enabled: true
+  - enabled: true
     title: 屋台『SUZUOKI』はじめました
     media:
       - type: image
@@ -55,8 +53,7 @@ sections:
         bold: true
     buttons: []
 
-  - type: flexible
-    enabled: true
+  - enabled: true
     title: 置フェス
     media:
       - type: image
@@ -71,8 +68,7 @@ sections:
         bold: true
     buttons: []
 
-  - type: flexible
-    enabled: true
+  - enabled: true
     title: 音楽配信
     media:
       - type: image
@@ -83,8 +79,7 @@ sections:
       - label: MUSIC
         url: https://www.tunecore.co.jp/artists/hitoshisuzuoki
 
-  - type: flexible
-    enabled: true
+  - enabled: true
     title: iOSアプリ
     media:
       - type: image
@@ -95,8 +90,7 @@ sections:
       - label: App Store
         url: https://apps.apple.com/us/app/dame-of-the-dead-beyond/id6502464339
 
-  - type: flexible
-    enabled: true
+  - enabled: true
     title: ブッキング・お問い合わせ
     media: []
     paragraphs:
@@ -106,29 +100,28 @@ sections:
       - label: お問い合わせフォーム
         url: https://forms.gle/2htiL5JxAox3Xnwu6
 
-  - type: biography
-    enabled: true
-    title: Biography
-    introduction: 東海エリアのラッパー兼パーティーオーガナイザー、エンターティナー
-    name: HITOSHI $UZUOKI a.k.a Black Joker
-    history:
-      - year: '2013'
-        event: 自主制作映画「DAME OF THE DEAD」公開
-      - year: '2015'
-        event: 自主制作DVD「(仮)Angler」発売
-      - year: '2019'
-        event: |-
-          YouTube「野営鈴置」チャンネル開設
-          置フェス 開始
-      - year: '2025'
-        event: |-
-          初EP「HITOSHI $UZUOKI」リリース
-          iOSアプリ「DAME OF THE DEAD BEYOND」リリース
-          「鈴置人士のもしよろしければ配信」スタート
-      - year: '2026'
-        event: |-
-          東海市議会議員選挙 立候補（162票/落選）
-          太田川駅前どんでん夜市「SUZUOKI」OPEN
+biography:
+  title: Biography
+  introduction: 東海エリアのラッパー兼パーティーオーガナイザー、エンターティナー
+  name: HITOSHI $UZUOKI a.k.a Black Joker
+  history:
+    - year: '2013'
+      event: 自主制作映画「DAME OF THE DEAD」公開
+    - year: '2015'
+      event: 自主制作DVD「(仮)Angler」発売
+    - year: '2019'
+      event: |-
+        YouTube「野営鈴置」チャンネル開設
+        置フェス 開始
+    - year: '2025'
+      event: |-
+        初EP「HITOSHI $UZUOKI」リリース
+        iOSアプリ「DAME OF THE DEAD BEYOND」リリース
+        「鈴置人士のもしよろしければ配信」スタート
+    - year: '2026'
+      event: |-
+        東海市議会議員選挙 立候補（162票/落選）
+        太田川駅前どんでん夜市「SUZUOKI」OPEN
 
 back_to_top_label: トップに戻る
 footer: © 野営鈴置 / 鈴置人士
