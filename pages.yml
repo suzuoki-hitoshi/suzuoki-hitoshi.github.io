@@ -1,0 +1,127 @@
+media:
+  input: img
+  output: /img
+  categories: [image]
+  rename: safe
+
+content:
+  - name: homepage
+    label: トップページ
+    type: file
+    path: _data/content.yml
+    format: yaml
+    fields:
+      - name: hero
+        label: プロフィール
+        type: object
+        fields:
+          - { name: title, label: 名前・サイト名, type: string, required: true }
+          - { name: subtitle, label: 肩書き, type: string, required: true }
+          - { name: image, label: プロフィール画像, type: image, required: true }
+          - { name: image_alt, label: 画像の説明, type: string, required: true }
+
+      - name: social_links
+        label: SNSリンク
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{label}"
+        fields:
+          - { name: label, label: SNS名, type: string, required: true }
+          - name: icon
+            label: アイコン
+            type: select
+            required: true
+            options:
+              values:
+                - { name: youtube, label: YouTube }
+                - { name: instagram, label: Instagram }
+                - { name: x, label: X }
+                - { name: tiktok, label: TikTok }
+          - { name: url, label: リンク先, type: string, required: true }
+          - { name: enabled, label: 表示する, type: boolean, default: true }
+
+      - name: sections
+        label: ページの項目（ドラッグで並べ替え）
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - { name: enabled, label: 表示する, type: boolean, default: true }
+          - { name: title, label: タイトル（不要なら空欄）, type: string, required: false }
+          - name: media
+            label: 画像・YouTube（追加・削除・並べ替え）
+            type: block
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{type}"
+            blockKey: type
+            blocks:
+              - name: image
+                label: 画像
+                fields:
+                  - { name: image, label: 画像, type: image, required: true }
+                  - { name: image_alt, label: 画像の説明, type: string, required: false }
+              - name: youtube
+                label: YouTube埋め込み
+                fields:
+                  - name: embed_url
+                    label: YouTube埋め込みURL
+                    type: string
+                    required: true
+                    description: "例：https://www.youtube.com/embed/動画ID"
+                  - { name: title, label: 動画の説明, type: string, required: false }
+          - name: paragraphs
+            label: 文章（追加・削除・並べ替え）
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "文章 {index}"
+            fields:
+              - { name: text, label: 文章, type: text, required: true }
+              - { name: bold, label: 太字にする, type: boolean, default: false }
+          - name: buttons
+            label: リンクボタン（追加・削除・並べ替え）
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{label}"
+            fields:
+              - { name: label, label: ボタンの文字, type: string, required: true }
+              - { name: url, label: リンク先, type: string, required: true }
+
+      - name: biography
+        label: Biography（固定）
+        type: object
+        fields:
+          - { name: title, label: タイトル, type: string, required: true }
+          - { name: introduction, label: 紹介文, type: text, required: true }
+          - { name: name, label: アーティスト名, type: string, required: true }
+          - name: history
+            label: 経歴
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{year}"
+            fields:
+              - { name: year, label: 年, type: string, required: true }
+              - { name: event, label: 内容, type: text, required: true }
+
+      - { name: back_to_top_label, label: 「トップに戻る」の文字, type: string, required: true }
+      - { name: footer, label: フッター, type: string, required: true }
+
+settings:
+  commit:
+    identity: app
+    templates:
+      create: "Pages CMS: {path}を追加"
+      update: "Pages CMS: {path}を更新"
+      delete: "Pages CMS: {path}を削除"
+      rename: "Pages CMS: {oldPath}から{newPath}へ変更"
