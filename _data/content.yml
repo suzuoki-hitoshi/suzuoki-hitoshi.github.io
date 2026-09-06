@@ -42,6 +42,9 @@ sections:
       - type: image
         image: /img/jkt1000px.png
         image_alt: HITOSHI SUZUOKI 音楽配信
+    paragraphs:
+      - text: 新曲「いのちの次に大切なもの」リリース
+        bold: false
     buttons:
       - label: MUSIC
         url: https://www.tunecore.co.jp/artists/hitoshisuzuoki
