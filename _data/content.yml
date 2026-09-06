@@ -65,7 +65,7 @@ sections:
     title: 音楽配信
     media:
       - type: image
-        image: /img/music.png
+        image: /img/jkt1000px.png
         image_alt: HITOSHI SUZUOKI 音楽配信
     buttons:
       - label: MUSIC
