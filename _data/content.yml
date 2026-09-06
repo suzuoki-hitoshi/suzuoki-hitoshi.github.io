@@ -1,7 +1,7 @@
 hero:
   title: 鈴置人士(野営鈴置)
   subtitle: 東海エリアのパーティーオーガナイザー
-  image: /img/jkt1000px-1.png
+  image: /img/suzuokihitoshi.png
   image_alt: 鈴置人士
 social_links:
   - label: YouTube
@@ -37,6 +37,15 @@ sections:
       - label: YouTube
         url: https://www.youtube.com/@rtmfilm
   - enabled: true
+    title: 音楽配信
+    media:
+      - type: image
+        image: /img/jkt1000px.png
+        image_alt: HITOSHI SUZUOKI 音楽配信
+    buttons:
+      - label: MUSIC
+        url: https://www.tunecore.co.jp/artists/hitoshisuzuoki
+  - enabled: true
     title: 屋台『SUZUOKI』はじめました
     media:
       - type: image
@@ -61,15 +70,6 @@ sections:
           場所 名鉄太田川駅どんでん広場(どんでん夜市)
           ※開催日はInstagramにて
         bold: true
-  - enabled: true
-    title: 音楽配信
-    media:
-      - type: image
-        image: /img/jkt1000px.png
-        image_alt: HITOSHI SUZUOKI 音楽配信
-    buttons:
-      - label: MUSIC
-        url: https://www.tunecore.co.jp/artists/hitoshisuzuoki
   - enabled: true
     title: iOSアプリ
     media:
