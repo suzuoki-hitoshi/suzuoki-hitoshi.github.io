@@ -3,7 +3,6 @@ hero:
   subtitle: 東海エリアのパーティーオーガナイザー
   image: /img/profile.png
   image_alt: 鈴置人士
-
 social_links:
   - label: YouTube
     icon: youtube
@@ -21,7 +20,6 @@ social_links:
     icon: tiktok
     url: https://www.tiktok.com/@suzuokihitoshi
     enabled: true
-
 sections:
   - enabled: true
     title: YouTube LIVE STREAM
@@ -38,7 +36,6 @@ sections:
     buttons:
       - label: YouTube
         url: https://www.youtube.com/@rtmfilm
-
   - enabled: true
     title: 屋台『SUZUOKI』はじめました
     media:
@@ -51,8 +48,6 @@ sections:
           場所 名鉄太田川駅どんでん広場(どんでん夜市)
           ※営業日はInstagramにて
         bold: true
-    buttons: []
-
   - enabled: true
     title: 置フェス
     media:
@@ -66,62 +61,54 @@ sections:
           場所 名鉄太田川駅どんでん広場(どんでん夜市)
           ※開催日はInstagramにて
         bold: true
-    buttons: []
-
   - enabled: true
     title: 音楽配信
     media:
       - type: image
         image: /img/music.png
         image_alt: HITOSHI SUZUOKI 音楽配信
-    paragraphs: []
     buttons:
       - label: MUSIC
         url: https://www.tunecore.co.jp/artists/hitoshisuzuoki
-
   - enabled: true
     title: iOSアプリ
     media:
       - type: image
         image: /img/app.png
         image_alt: DAME OF THE DEAD BEYOND
-    paragraphs: []
     buttons:
       - label: App Store
         url: https://apps.apple.com/us/app/dame-of-the-dead-beyond/id6502464339
-
   - enabled: true
     title: ブッキング・お問い合わせ
-    media: []
     paragraphs:
       - text: お気軽にお問い合わせください🙇‍♀️
         bold: false
     buttons:
       - label: お問い合わせフォーム
         url: https://forms.gle/2htiL5JxAox3Xnwu6
-
 biography:
   title: Biography
   introduction: 東海エリアのラッパー兼パーティーオーガナイザー、エンターティナー
   name: HITOSHI $UZUOKI a.k.a Black Joker
   history:
-    - year: '2013'
+    - year: "2013"
       event: 自主制作映画「DAME OF THE DEAD」公開
-    - year: '2015'
+    - year: "2015"
       event: 自主制作DVD「(仮)Angler」発売
-    - year: '2019'
+    - year: "2019"
       event: |-
         YouTube「野営鈴置」チャンネル開設
         置フェス 開始
-    - year: '2025'
+    - year: "2025"
       event: |-
         初EP「HITOSHI $UZUOKI」リリース
         iOSアプリ「DAME OF THE DEAD BEYOND」リリース
         「鈴置人士のもしよろしければ配信」スタート
-    - year: '2026'
+    - year: "2026"
       event: |-
         東海市議会議員選挙 立候補（162票/落選）
         太田川駅前どんでん夜市「SUZUOKI」OPEN
-
+        「いのちの次に大切なもの」リリース
 back_to_top_label: トップに戻る
 footer: © 野営鈴置 / 鈴置人士
